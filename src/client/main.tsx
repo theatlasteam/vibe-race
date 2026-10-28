@@ -920,9 +920,6 @@ function Chat({ conn }: { conn: Conn }) {
   useEffect(() => {
     setBusySince(busy ? Date.now() : null);
     setShowStop(busy);
-    if (!busy) return;
-    const t = setTimeout(() => setShowStop(false), 20000);
-    return () => clearTimeout(t);
   }, [busy]);
 
   useEffect(() => {

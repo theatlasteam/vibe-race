@@ -129,6 +129,9 @@ export class Agent {
         abortSignal: inner.signal,
         temperature: 0.8,
         maxOutputTokens: 8000,
+        providerOptions: {
+          openai: { reasoningEffort: "low" },
+        },
         maxRetries: 1,
         onStepFinish: ({ toolCalls }) => {
           if (toolCalls.length > 0) {
