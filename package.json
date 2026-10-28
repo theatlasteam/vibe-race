@@ -1,0 +1,31 @@
+{
+  "name": "vibe-race",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A multiplayer race to vibe code the best project before the clock runs out.",
+  "scripts": {
+    "dev": "bun --watch src/server/index.ts",
+    "start": "bun src/server/index.ts",
+    "build": "bun build ./index.html --outdir ./dist --minify",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.104",
+    "@astryxdesign/core": "^0.7.4",
+    "@astryxdesign/theme-neutral": "^0.7.4",
+    "@stylexjs/stylex": "^0.19.1",
+    "ai": "^7.0.155",
+    "geist-icons": "^1.3.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@astryxdesign/cli": "^0.7.4",
+    "@types/bun": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.9.2"
+  }
+}
